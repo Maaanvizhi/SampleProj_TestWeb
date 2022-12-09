@@ -25,11 +25,9 @@ jobs:
           node-version: 14
           
       - name: Install dependencies in client app
-        working-directory: SampleProj_TestWeb
         run: npm install
           
       - name: Build and publish with dotnet
-        working-directory: SampleProj_TestWeb
         run: |
           dotnet build --configuration Release
           dotnet publish -c Release -o publish
