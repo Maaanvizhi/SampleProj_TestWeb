@@ -20,7 +20,7 @@ jobs:
           node-version: 14
           
       - name: Build and publish with dotnet
-        working-directory: SampleProj_TestWeb/SampleProj_TestWeb
+        working-directory: SampleProj_TestWeb/SampleProj_TestWeb/
         run: |
           dotnet build --configuration Release
           dotnet publish -c Release -o publish
